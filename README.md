@@ -26,10 +26,10 @@ A landing page to improve CSS skills. All the elements are placed using the posi
 
 ## Color Reference
 
-| Color     | Hex                                                                    |
-| --------- | ---------------------------------------------------------------------- |
-| Purple    | ![#7030cc](https://via.placeholder.com/10/636c797030cc?text=+) #7030cc |
-| Torqouise | ![#1bbcef](https://via.placeholder.com/10/1bbcef?text=+) #1bbcef       |
+| Color     | Hex                                                              |
+| --------- | ---------------------------------------------------------------- |
+| Purple    | ![#7030cc](https://via.placeholder.com/10/7030cc?text=+) #7030cc |
+| Torqouise | ![#1bbcef](https://via.placeholder.com/10/1bbcef?text=+) #1bbcef |
 
 ![break line](https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif)
 
