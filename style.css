@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+:root {
+  /* Colors */
+  --purple: #7030cc;
+  --turquoise: #1bbcef;
+  --lime: #7aca3a;
+  --orange: #f28a3f;
+
+  /* font size */
+  --h1-size-sm: 32px;
+  --h1-size-md: 56px;
+
+  --h2-size-sm: 32px;
+  --h2-size-md: 32px;
+
+  --h3-size-sm: 24px;
+  --h3-size-md: 32px;
+
+  --p-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  list-style: none;
+
+  font: inherit;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* utility class */
+.btn {
+  padding: 7px 20px;
+  background-color: var(--turquoise);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.orange {
+  color: var(--orange);
+}
+.lime {
+  color: var(--lime);
+}
+.turquoise {
+  color: var(--turquoise);
+}
+
+/* Headaer section ---------------------------------------------- */
+header {
+  background-color: var(--purple);
+}
+
+header .nav {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+.brand i {
+  font-size: 24px;
+  color: white;
+}
+.logo {
+  height: 24px;
+}
+
+nav {
+  display: none;
+}
+
+header .nav ul {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+header .nav ul li {
+  padding: 5px 15px;
+}
+
+/* hero section -------------------------------------------------------------------------- */
+.hero {
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+}
+.hero-right {
+  padding: 24px;
+  color: white;
+}
+.hero-right-content h1 {
+  margin-top: 24px;
+  font-size: var(--h1-size-sm);
+  font-weight: 800;
+}
+.hero-right-content p {
+  margin-top: 16px;
+  font-size: var(--p-size);
+}
+
+/* section 2 ----------------------------------------------------------------------------------- */
+.sec-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.sec-2-right-content {
+  padding: 24px;
+}
+.sec-2-right-content h2 {
+  font-size: var(--h2-size-sm);
+  font-weight: 600;
+}
+
+.sec-2-right-content-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-top: 24px;
+}
+
+.sec-2-right-content-cards .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.sec-2-right-content-cards .card i {
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+.sec-2-right-content-cards .card .card-content h3 {
+  font-size: var(--h3-size-sm);
+  font-weight: 600;
+}
+.sec-2-right-content-cards .card .card-content p {
+  font-size: var(--p-size);
+  margin-top: 16px;
+}
+
+/* section 3 ------------------------------------------------------------------ */
+
+/* media query */
+@media screen and (min-width: 640px) {
+  /* header section */
+  header .nav {
+    max-width: 1280px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 auto;
+  }
+  nav {
+    display: flex;
+  }
+  .brand > i {
+    display: none;
+  }
+
+  /* hero section -------------------------------------------------------------------------------- */
+  .hero {
+    flex-direction: row-reverse;
+    max-width: 1280px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 auto;
+    height: 600px;
+  }
+  .hero-left {
+    width: 50%;
+    padding: 0;
+    position: relative;
+  }
+  .hero-left img {
+    position: absolute;
+    right: -100px;
+  }
+  .hero-right {
+    width: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .hero-right-content {
+    width: 80%;
+  }
+
+  /* section 2 ----------------------------------------------------- */
+  .sec-2 {
+    flex-direction: row;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .sec-2-left {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+  .sec-2-left img {
+    width: 80%;
+  }
+  .sec-2-right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+}
